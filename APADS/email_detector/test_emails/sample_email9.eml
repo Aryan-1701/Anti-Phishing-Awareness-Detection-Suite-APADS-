@@ -1,0 +1,14 @@
+From: updates@shoppingdeals.com
+To: subscriber@example.com
+Subject: Top Discounts This Week
+Date: Fri, 29 Aug 2025 15:30:00 +0530
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<body>
+<h2>Exclusive Deals for You</h2>
+<p>Save up to 50% on electronics this week!</p>
+<a href="http://tracking.shoppingdeals.com/offer">Click here to shop</a>
+</body>
+</html>

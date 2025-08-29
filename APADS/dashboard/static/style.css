@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fafafa;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 18px;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+h1 { margin-top: 0; }
+
+nav { margin: 12px 0; }
+.btn {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  background: #1976d2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.card {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.flash-list { list-style: none; padding-left: 0; }
+.flash { padding: 8px; border-radius: 4px; margin-bottom: 8px; }
+.flash.success { background: #e8f5e9; color: #2e7d32; }
+.flash.error { background: #ffebee; color: #c62828; }

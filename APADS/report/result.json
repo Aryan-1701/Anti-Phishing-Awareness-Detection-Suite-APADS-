@@ -1,0 +1,18 @@
+{
+    "url": "https://github.com/",
+    "domain": "github.com",
+    "suspicious_keywords": [],
+    "ip_based": false,
+    "domain_age_days": 6533,
+    "has_login_form": false,
+    "external_form_actions": [
+        "/search/feedback",
+        "/search/custom_scopes",
+        "/signup",
+        "/signup"
+    ],
+    "password_fields": 0,
+    "screenshot": "report\\site_capture.png",
+    "reputation_checked": false,
+    "reputation_status": "unknown"
+}

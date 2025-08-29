@@ -1,0 +1,33 @@
+# === Core ===
+requests
+beautifulsoup4
+tldextract
+python-whois
+email-validator
+
+# === Email Handling ===
+imaplib2        # for IMAP inbox support (Gmail/Outlook)
+lxml            # HTML parsing for emails
+
+# === Dashboard (Flask) ===
+Flask
+Jinja2
+
+# === GUI (Tkinter is built-in, no pip install needed) ===
+
+# === Selenium & Automation ===
+selenium
+fake-useragent
+
+# === Utilities ===
+python-dateutil
+dnspython
+
+# === Optional APIs (VirusTotal, Google Safe Browsing) ===
+# Install only if you integrate with external APIs
+# virustotal-python
+# google-api-python-client
+
+# === Development ===
+pytest
+imaplib2 

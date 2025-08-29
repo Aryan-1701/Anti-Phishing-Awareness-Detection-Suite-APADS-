@@ -1,0 +1,10 @@
+{
+    "from": "updates@shoppingdeals.com",
+    "subject": "Top Discounts This Week",
+    "suspicious_domain": null,
+    "suspicious_links": [],
+    "attachments": [],
+    "domain_age_days": null,
+    "score": 0,
+    "verdict": "SAFE"
+}

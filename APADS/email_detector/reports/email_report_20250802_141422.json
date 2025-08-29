@@ -1,0 +1,12 @@
+{
+    "from": "Google Security <no-reply@secure-update-login.com>",
+    "subject": "\u26a0\ufe0f Suspicious Login Attempt Detected",
+    "suspicious_domain": "secure-update-login.com>",
+    "suspicious_links": [
+        "http://login-verification-secure.com"
+    ],
+    "attachments": [],
+    "domain_age_days": null,
+    "score": 4,
+    "verdict": "SUSPICIOUS"
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>APADS — Learn</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>How to Spot Phishing</h1>
+    <nav>
+      <a class="btn" href="{{ url_for('index') }}">Home</a>
+      <a class="btn" href="{{ url_for('reports') }}">Reports</a>
+    </nav>
+
+    <article>
+      <ul>
+        <li>Check the sender address carefully — display name can be spoofed.</li>
+        <li>Hover (or long-press) links to see the real domain before clicking.</li>
+        <li>Look for urgent language asking to verify/update credentials.</li>
+        <li>Do not open attachments from unknown or unexpected senders.</li>
+        <li>Enable 2FA on critical accounts and use app passwords for integrations.</li>
+      </ul>
+    </article>
+
+    <section>
+      <h2>Mini Quiz (for awareness)</h2>
+      <p>Q: You receive "Your account is suspended" with a link — what do you do?</p>
+      <ol>
+        <li>Click link immediately — risky</li>
+        <li>Open a new browser tab and manually visit the official site — safe ✅</li>
+      </ol>
+    </section>
+  </div>
+</body>
+</html>

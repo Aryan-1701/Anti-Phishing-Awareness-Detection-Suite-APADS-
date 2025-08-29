@@ -1,0 +1,30 @@
+From: "Google Security" <no-reply@secure-update-login.com>
+To: user@example.com
+Subject: ⚠️ Suspicious Login Attempt Detected
+Date: Fri, 2 Aug 2025 09:35:00 +0530
+Content-Type: multipart/alternative; boundary="boundary_123456"
+
+--boundary_123456
+Content-Type: text/plain; charset="UTF-8"
+
+We noticed a suspicious login attempt to your Google Account from a new device.
+
+If this wasn't you, please update your credentials immediately.
+
+Login Now: http://login-verification-secure.com
+
+Google Security Team
+
+--boundary_123456
+Content-Type: text/html; charset="UTF-8"
+
+<html>
+  <body>
+    <p><strong>Google Security Alert:</strong></p>
+    <p>We noticed a suspicious login attempt to your Google Account from a new device.</p>
+    <p>If this wasn't you, please <a href="http://login-verification-secure.com">click here</a> to verify your account and update your credentials.</p>
+    <p>Thank you,<br>Google Security Team</p>
+  </body>
+</html>
+
+--boundary_123456--

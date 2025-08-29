@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>APADS — Reports</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Detection Reports</h1>
+    <nav>
+      <a class="btn" href="{{ url_for('index') }}">Home</a>
+      <a class="btn" href="{{ url_for('learn') }}">Learn</a>
+      <a class="btn" href="{{ url_for('simulate') }}">Simulate</a>
+    </nav>
+
+    <section>
+      <h2>Email Report</h2>
+      {% if email %}
+        <div class="card">
+          <p><b>From:</b> {{ email.from }}</p>
+          <p><b>Subject:</b> {{ email.subject }}</p>
+          <p><b>Verdict:</b> {{ email.verdict }}</p>
+          <p><b>Score:</b> {{ email.score }}</p>
+          <p><b>Suspicious Links:</b>
+            <ul>
+              {% for l in email.suspicious_links %}
+                <li><a href="{{ l }}" target="_blank" rel="noreferrer noopener">{{ l }}</a></li>
+              {% endfor %}
+            </ul>
+          </p>
+        </div>
+      {% else %}
+        <p>No email report found in <code>reports/email_report.json</code>.</p>
+      {% endif %}
+    </section>
+
+    <section>
+      <h2>URL Report</h2>
+      {% if url %}
+        <div class="card">
+          <p><b>URL:</b> {{ url.url }}</p>
+          <p><b>Verdict:</b> {{ url.verdict }}</p>
+          <p><b>Issues:</b>
+            <ul>
+              {% for issue in url.issues %}
+                <li>{{ issue }}</li>
+              {% endfor %}
+            </ul>
+          </p>
+        </div>
+      {% else %}
+        <p>No url report found in <code>reports/url_report.json</code>.</p>
+      {% endif %}
+    </section>
+  </div>
+</body>
+</html>

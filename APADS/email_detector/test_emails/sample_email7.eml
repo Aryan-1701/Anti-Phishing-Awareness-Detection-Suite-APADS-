@@ -1,0 +1,24 @@
+From: recruiter@fakejobs.com
+To: applicant@example.com
+Subject: Job Offer - Urgent Response Needed
+Date: Fri, 29 Aug 2025 14:30:00 +0530
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="sep"
+
+--sep
+Content-Type: text/plain; charset=UTF-8
+
+Dear Candidate,
+
+We are pleased to offer you a job at our prestigious company.  
+Please review the attached contract and reply with your signature.  
+
+Regards,  
+HR Department  
+
+--sep
+Content-Type: application/pdf
+Content-Disposition: attachment; filename="Job_Contract.pdf"
+
+<binary data here>
+--sep--

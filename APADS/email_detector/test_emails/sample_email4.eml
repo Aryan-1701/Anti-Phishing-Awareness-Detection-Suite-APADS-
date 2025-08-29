@@ -1,0 +1,18 @@
+From: security@icicibank.com
+To: customer@example.com
+Subject: Account Locked - Immediate Action Required
+Date: Fri, 29 Aug 2025 13:00:00 +0530
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Dear Customer,
+
+Your ICICI Bank account has been temporarily locked due to unusual login attempts.  
+To restore access, please verify your details by clicking the secure link below:  
+
+http://fakebank-login.com  
+
+Failure to act within 24 hours will result in permanent suspension.  
+
+Sincerely,  
+ICICI Bank Security Team

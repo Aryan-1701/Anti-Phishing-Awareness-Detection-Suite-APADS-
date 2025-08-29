@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>APADS Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>APADS — Phishing Awareness & Detection Dashboard</h1>
+
+    <p>Quick status:</p>
+    <ul>
+      <li>Email report present: {{ 'Yes' if stats.email_exists else 'No' }}</li>
+      <li>URL report present: {{ 'Yes' if stats.url_exists else 'No' }}</li>
+    </ul>
+
+    <nav>
+      <a class="btn" href="{{ url_for('reports') }}">View Reports</a>
+      <a class="btn" href="{{ url_for('learn') }}">Phishing Awareness</a>
+      <a class="btn" href="{{ url_for('simulate') }}">Run Simulation (log)</a>
+    </nav>
+
+    <section>
+      <h2>Recent summary</h2>
+      <canvas id="summaryChart" width="400" height="200"></canvas>
+    </section>
+
+    <footer>
+      <small>APADS — for educational use only.</small>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='chart.js') }}"></script>
+  <script>
+    // request data and render chart
+    fetch("{{ url_for('api_reports') }}")
+      .then(r => r.json())
+      .then(data => {
+        const emailScore = data.email.score || 0;
+        const urlScore = data.url.score || 0;
+        renderBarChart('summaryChart', ['Email','URL'], [emailScore, urlScore]);
+      })
+      .catch(e => {
+        console.warn("Could not fetch report data for chart:", e);
+      });
+  </script>
+</body>
+</html>

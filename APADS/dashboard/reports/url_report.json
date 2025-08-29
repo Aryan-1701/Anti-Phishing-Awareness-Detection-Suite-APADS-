@@ -1,0 +1,9 @@
+{
+  "url": "http://login-verification-secure.com",
+  "issues": [
+    "Suspicious domain keywords",
+    "Login form detected"
+  ],
+  "verdict": "SUSPICIOUS",
+  "score": 5
+}

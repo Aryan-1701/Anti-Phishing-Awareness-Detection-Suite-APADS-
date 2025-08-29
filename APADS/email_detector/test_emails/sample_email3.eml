@@ -1,0 +1,18 @@
+From: news@trustednews.com
+To: subscriber@example.com
+Subject: Daily Tech Newsletter
+Date: Fri, 29 Aug 2025 12:00:00 +0530
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<body>
+<h2>Today’s Top Tech Headlines</h2>
+<ul>
+  <li>AI is transforming cybersecurity in 2025</li>
+  <li>Quantum computing breakthroughs announced</li>
+  <li>Major updates to Python 3.14 released</li>
+</ul>
+<p>Thank you for subscribing!</p>
+</body>
+</html>
