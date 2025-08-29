@@ -14,38 +14,34 @@ Provides a web-based dashboard for easy visualization of results
 Important Steps to Use
 
 1. Clone the Repository
-
-2. git clone <repository-url>
+git clone <repository-url>
 cd APADS
 
 
-3. Install Dependencies
+2. Install Dependencies
 Ensure Python 3.x is installed, then install required libraries:
 pip install -r requirements.txt
 
 
-4. Set Up Folders
+3. Set Up Folders
 Place sample .eml emails in the email_detector/test_emails folder.
 Ensure a reports folder exists in the email_detector directory to save analysis outputs.
 
-5. Run Modules
-Email Detector
-python email_detector/main.py
-Analyzes emails and generates a JSON report.
-
-URL Analyzer
-python url_analyzer/main.py
-Checks suspicious links for potential phishing.
-
-Dashboard
-python dashboard/app.py
-Displays phishing analysis results and simulations in a web interface.
-View Reports
-Generated reports are stored in the reports folder. Open the JSON files for detailed insights.
-
-Run Launcher GUI (Optional)
+4. Run Launcher GUI
+The launcher provides a unified interface to run all modules:
 python launcher_gui/launcher.py
-Provides a unified interface to run all modules and visualize outputs.
+
+From the launcher, you can start:
+
+Email Detector – analyzes emails and generates JSON reports.
+
+URL Analyzer – checks suspicious links for potential phishing.
+
+Dashboard – displays phishing analysis results and simulations in a web interface.
+
+View Reports
+
+Generated reports are stored in the reports folder. Open the JSON files for detailed insights.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Advantages:
